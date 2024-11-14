@@ -237,14 +237,34 @@ WHERE
     `month` >= 7;
 ```
 
-| month         | name               | Total_Quantity |
-| ------------- | ------------------ | -------------- | --- |
-| Atlanta       | Macbook Pro Laptop | 644300         |
-| Austin        | Macbook Pro Laptop | 426700         | 1   |
-| Boston        | Macbook Pro Laptop | 814300         | 1   |
-| Dallas        | Macbook Pro Laptop | 649400         | 1   |
-| Los Angeles   | Macbook Pro Laptop | 1276700        | 1   |
-| New York City | Macbook Pro Laptop | 1116900        | 1   |
-| Portland      | Macbook Pro Laptop | 572900         | 1   |
-| San Francisco | Macbook Pro Laptop | 1931200        | 1   |
-| Seattle       | Macbook Pro Laptop | 605200         | 1   |
+### 6. Which days were sales really high?
+
+```sql
+WITH day_sales AS (
+    SELECT
+        DAYNAME(order_date) AS `day`,
+        SUM(quantity_ordered) AS total_quantity
+    FROM
+        sales
+    WHERE
+        YEAR(order_date) = "2019"
+    GROUP BY
+        `day`
+)
+SELECT
+    *
+FROM
+    day_sales
+ORDER BY
+    total_quantity DESC;
+```
+
+| Day       | Total_Quantity |
+| --------- | -------------- |
+| Tuesday   | 30724          |
+| Monday    | 29899          |
+| Sunday    | 29778          |
+| Saturday  | 29769          |
+| Wednesday | 29758          |
+| Thursday  | 29662          |
+| Friday    | 29448          |
