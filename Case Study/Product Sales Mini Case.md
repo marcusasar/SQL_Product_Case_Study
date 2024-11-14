@@ -1,4 +1,4 @@
-# 👩🏻‍⚕️ Health Analytics Mini Case Study
+# 👩🏻‍⚕️ Product Analytics Mini Case Study
 
 ## 📌 Solution
 
