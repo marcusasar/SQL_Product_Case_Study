@@ -44,10 +44,10 @@ LIMIT 5;
 ```sql
 WITH product_least_sales (products, quantity) AS (
 	SELECT
-		product,
-		SUM(quantity_ordered)
+        product,
+        SUM(quantity_ordered)
 	FROM
-		sales
+        sales
 	WHERE
 		YEAR(order_date) = "2019"
 	GROUP BY
