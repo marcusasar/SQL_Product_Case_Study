@@ -109,7 +109,7 @@ ORDER BY
 
 The data on total quantities sold across different cities reveals the following trends:
 
-- **San Francisco** again leads with the highest total quantity sold, reaching **50,226** units, marking it as the top performer.
+- **San Francisco** leads with the highest total quantity sold, reaching **50,226** units, marking it as the top performer.
 - **Los Angeles** follows with **33,288** units, still significantly behind San Francisco but leading the second tier of cities.
 - **New York City** comes in third, with **27,916** units sold, maintaining a strong position among the top cities.
 - **Boston** shows a solid performance with **22,524** units sold, higher than the cities trailing behind it.
