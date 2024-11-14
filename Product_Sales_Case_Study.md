@@ -43,22 +43,15 @@ The AAA Batteries (4-pack) have the highest quantity, while Wired Headphones hav
 
 ```sql
 WITH product_least_sales (products, quantity) AS (
-    SELECT
-        product,
+    SELECT product,
         SUM(quantity_ordered)
-    FROM
-        sales
-    WHERE
-        YEAR(order_date) = "2019"
-    GROUP BY
-        product
+    FROM sales
+    WHERE YEAR(order_date) = "2019"
+    GROUP BY product
 )
-SELECT
-    *
-FROM
-    product_least_sales
-ORDER BY
-    quantity ASC
+SELECT *
+FROM product_least_sales
+ORDER BY quantity ASC
 LIMIT 5;
 ```
 
@@ -73,7 +66,7 @@ Top 5 products with least sales in last year.
 | 20in Monitor | 4126 |
 | ThinkPad Laptop | 4128 |
 
-LG Dryer and LG Washing Machine were the products with least quantity ordered by customers:this means they were not really needed, while 20in Monitor and ThinkPad Laptop had some good sales among the list.
+LG Dryer and LG Washing Machine were the products with least quantity ordered by customers, while 20in Monitor and ThinkPad Laptop had some good sales among the list.
 
 ### 3. What was the sales volume for each city during last year?
 
@@ -120,3 +113,57 @@ The data on total quantities sold across different cities reveals the following 
 - **Portland** has sold **14,051** units, and **Austin** has the lowest sales quantity at **11,151** units.
 
 In summary, San Francisco stands out in both total quantity sold figures, while cities like Austin and Portland report significantly lower quantities sold compared to the leaders in the list.
+
+### 4. Which product was really purchased by customers in these cities?
+
+```sql
+WITH product_sales_by_city(city, product, total_quantity) AS (
+    SELECT
+        city,
+        product,
+        SUM(quantity_ordered) AS total_quantity
+    FROM
+        sales
+    GROUP BY
+        city,
+        product
+
+),ranking AS (
+SELECT
+    *,
+     DENSE_RANK() OVER(PARTITION BY city ORDER BY total_quantity DESC) AS rn
+FROM
+    product_sales_by_city
+)
+SELECT
+    *
+FROM
+    ranking
+WHERE
+    rn <= 1;
+```
+
+**Answer:**
+
+| City          | Product                | Total_quantit |
+| ------------- | ---------------------- | ------------- |
+| Atlanta       | AAA Batteries (4-pack) | 2359          |
+| Austin        | AAA Batteries (4-pack) | 1668          |
+| Boston        | AAA Batteries (4-pack) | 3461          |
+| Dallas        | AAA Batteries (4-pack) | 2504          |
+| Los Angeles   | AAA Batteries (4-pack) | 4967          |
+| New York City | AAA Batteries (4-pack) | 4124          |
+| Portland      | AAA Batteries (4-pack) | 2080          |
+| San Francisco | AAA Batteries (4-pack) | 7408          |
+| Seattle       | AAA Batteries (4-pack) | 2446          |
+
+"city","product","total_quantity","rn"
+" Atlanta","AAA Batteries (4-pack)","2359","1"
+" Austin","AAA Batteries (4-pack)","1668","1"
+" Boston","AAA Batteries (4-pack)","3461","1"
+" Dallas","AAA Batteries (4-pack)","2504","1"
+" Los Angeles","AAA Batteries (4-pack)","4967","1"
+" New York City","AAA Batteries (4-pack)","4124","1"
+" Portland","AAA Batteries (4-pack)","2080","1"
+" San Francisco","AAA Batteries (4-pack)","7408","1"
+" Seattle","AAA Batteries (4-pack)","2446","1"
