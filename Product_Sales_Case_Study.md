@@ -43,7 +43,7 @@ LIMIT 5;
 
 ```sql
 WITH product_least_sales (products, quantity) AS (
-	SELECT
+    SELECT
         product,
         SUM(quantity_ordered)
 	FROM
