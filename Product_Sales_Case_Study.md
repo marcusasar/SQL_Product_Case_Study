@@ -46,12 +46,12 @@ WITH product_least_sales (products, quantity) AS (
     SELECT
         product,
         SUM(quantity_ordered)
-	FROM
+    FROM
         sales
-	WHERE
-		YEAR(order_date) = "2019"
-	GROUP BY
-		product
+    WHERE
+        YEAR(order_date) = "2019"
+    GROUP BY
+        product
 )
 SELECT
 	*
