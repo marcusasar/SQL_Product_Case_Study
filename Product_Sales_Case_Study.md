@@ -17,11 +17,11 @@ WITH product_highest_sales (products, quantity) AS (
         product
 )
 SELECT
-	*
+    *
 FROM
-	product_highest_sales
+    product_highest_sales
 ORDER BY
-	quantity DESC
+    quantity DESC
 LIMIT 5;
 
 ```
