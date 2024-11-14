@@ -76,10 +76,10 @@ LIMIT 5;
 ## Q3. What was the sale volume for each city during last year?
 
 ```sql
-WITH sales_by_city(city, total_quantitys) AS (
+WITH sales_by_city(city, total_quantity) AS (
 	SELECT
 		city,
-        SUM(quantity_ordered) AS total_sales
+        SUM(quantity_ordered)
 	FROM
 		sales
 	WHERE
@@ -106,14 +106,14 @@ ORDER BY
 | Portland      | 14051          |
 | Austin        | 11151          |
 
-The sales data for several major cities reveals the following:
+The data on total quantities sold across different cities reveals the following trends:
 
-- **San Francisco** leads with the highest total sales of **$50,226**, significantly outpacing all other cities.
-- **Los Angeles** follows with **$33,288** in sales, nearly 17,000 less than San Francisco.
-- **New York City** comes next with **$27,916** in total sales.
-- **Boston** reports **$22,524** in sales, slightly ahead of the remaining cities.
-- **Dallas** and **Atlanta** have similar figures, with **$16,728** and **$16,602** in sales respectively.
-- **Seattle** is slightly behind Atlanta at **$16,552** in sales.
-- **Portland** follows with **$14,051** in sales, and **Austin** has the lowest total sales at **$11,151**.
+- **San Francisco** again leads with the highest total quantity sold, reaching **50,226** units, marking it as the top performer.
+- **Los Angeles** follows with **33,288** units, still significantly behind San Francisco but leading the second tier of cities.
+- **New York City** comes in third, with **27,916** units sold, maintaining a strong position among the top cities.
+- **Boston** shows a solid performance with **22,524** units sold, higher than the cities trailing behind it.
+- **Dallas** and **Atlanta** are close in sales quantity, with **16,728** and **16,602** units sold, respectively.
+- **Seattle** is also within this range, at **16,552** units, showing similar sales performance to Dallas and Atlanta.
+- **Portland** has sold **14,051** units, and **Austin** has the lowest sales quantity at **11,151** units.
 
-In summary, San Francisco stands out as the leader in total sales, while cities like Austin and Portland are at the bottom of the list.
+In summary, San Francisco stands out in both total quantity sold and sales figures, while cities like Austin and Portland report significantly lower quantities sold compared to the leaders in the list.
