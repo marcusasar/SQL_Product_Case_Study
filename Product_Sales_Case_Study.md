@@ -29,7 +29,7 @@ LIMIT 5;
 **Answer:**
 
 **These are the list of the top 5 products with highest sales in the past year (2019).**
-| Products | Quantity |
+| Products | Total_Quantity |
 | ------------------------ | -------- |
 | AAA Batteries (4-pack) | 31012 |
 | AA Batteries (4-pack) | 27635 |
@@ -65,7 +65,7 @@ LIMIT 5;
 **Answer:**
 
 **Top 5 products with least sales in last year**
-| Products | Quantity |
+| Products | Total_Quantity |
 | ------------------ | -------- |
 | LG Dryer | 646 |
 | LG Washing Machine | 666 |
@@ -95,12 +95,13 @@ ORDER BY
 	total_quantity DESC;
 ```
 
-| City          | total_quantity |
+| City          | Total_quantity |
 | ------------- | -------------- |
 | San Francisco | 50226          |
 | Los Angeles   | 33288          |
 | New York City | 27916          |
 | Boston        | 22524          |
+| Dallas        | 16728          |
 | Atlanta       | 16602          |
 | Seattle       | 16552          |
 | Portland      | 14051          |
