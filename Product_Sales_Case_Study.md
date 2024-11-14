@@ -197,3 +197,18 @@ WHERE
 ```
 
 Even though MacBook Pro Laptop was not the product that had more sales in each of the cities, but it turns to generate more revenue than AAA Batteries (4-pack) which dominates in each city.
+
+### 5. How have product sales grown or declined over the last 6 month of 2019?
+
+```sql
+WITH product_sales_month_trend AS (
+    SELECT
+        `month`,
+        MONTHNAME(ordered_date) AS name,
+        SUM(quantity_ordered) AS Total Quantity
+    FROM
+        sales
+    GROUP BY
+
+)
+```
