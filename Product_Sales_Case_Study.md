@@ -196,6 +196,18 @@ WHERE
     rn <= 1;
 ```
 
+| City          | Product            | Total_Revenue | rn  |
+| ------------- | ------------------ | ------------- | --- |
+| Atlanta       | Macbook Pro Laptop | 644300        | 1   |
+| Austin        | Macbook Pro Laptop | 426700        | 1   |
+| Boston        | Macbook Pro Laptop | 814300        | 1   |
+| Dallas        | Macbook Pro Laptop | 649400        | 1   |
+| Los Angeles   | Macbook Pro Laptop | 1276700       | 1   |
+| New York City | Macbook Pro Laptop | 1116900       | 1   |
+| Portland      | Macbook Pro Laptop | 572900        | 1   |
+| San Francisco | Macbook Pro Laptop | 1931200       | 1   |
+| Seattle       | Macbook Pro Laptop | 605200        | 1   |
+
 Even though MacBook Pro Laptop was not the product that had more sales in each of the cities, but it turns to generate more revenue than AAA Batteries (4-pack) which dominates in each city.
 
 ### 5. How have product sales grown or declined over the last 6 month of 2019?
