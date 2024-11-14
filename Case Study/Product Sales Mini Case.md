@@ -1,11 +1,27 @@
-# 👩🏻‍⚕️ Product Analytics Mini Case Study
+# 🛒 Product Analytics Mini Case Study
 
 ## 📌 Solution
 
-### 1. How many unique users exist in the logs dataset?
+### 1. What are the top 5 products with the highest sales in past year?
 
 ```sql
+WITH product_highest_sales (products, quantity) AS (
+    SELECT
+      product,
+      SUM(quantity_ordered)
+    FROM
+      sales
+    WHERE
+      YEAR(order_date) = "2019"
+    GROUP BY
+      product
+)
 SELECT
-  COUNT(DISTINCT id) AS unique_users
-FROM health.user_logs
+	*
+FROM
+	product_highest_sales
+ORDER BY
+	quantity DESC
+LIMIT 5;
+
 ```
