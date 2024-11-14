@@ -214,14 +214,25 @@ Cities like San Francisco, Los Angeles and New York drives the highest revenues,
 ### 5. How have product sales grown or declined over the last 6 month of 2019?
 
 ```sql
-WITH product_sales_month_trend AS (
+WITH sales_monthly_trend AS (
     SELECT
         `month`,
-        MONTHNAME(ordered_date) AS name,
-        SUM(quantity_ordered) AS Total Quantity
+        MONTHNAME(order_date) AS name,
+        SUM(quantity_ordered) AS Total_Quantity
     FROM
         sales
+    WHERE
+        YEAR(order_date) = "2019" AND product = "Macbook Pro Laptop"
     GROUP BY
-
+        `month`,
+        name
+    ORDER BY
+        `month` ASC
 )
+SELECT
+    *
+FROM
+    sales_monthly_trend
+WHERE
+    `month` >= 7;
 ```
