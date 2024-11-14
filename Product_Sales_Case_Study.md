@@ -56,7 +56,7 @@ WITH product_least_sales (products, quantity) AS (
 SELECT
     *
 FROM
-    product_highest_sales
+    product_least_sales
 ORDER BY
     quantity ASC
 LIMIT 5;
@@ -64,10 +64,11 @@ LIMIT 5;
 
 **Answer:**
 
-| Products           | Quantity |
+**Top 5 products with least sales in last year**
+| Products | Quantity |
 | ------------------ | -------- |
-| LG Dryer           | 646      |
-| LG Washing Machine | 666      |
-| Vareebadd Phone    | 2067     |
-| 20in Monitor       | 4126     |
-| ThinkPad Laptop    | 4128     |
+| LG Dryer | 646 |
+| LG Washing Machine | 666 |
+| Vareebadd Phone | 2067 |
+| 20in Monitor | 4126 |
+| ThinkPad Laptop | 4128 |
