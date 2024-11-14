@@ -5,7 +5,7 @@
 ### 1. What are the top 5 products with the highest sales in the past year?
 
 ```sql
-WITH product_highest_sales (products, sales) AS (
+WITH product_highest_sales (products, quantity) AS (
     SELECT
       product,
       SUM(quantity_ordered)
