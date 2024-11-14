@@ -28,7 +28,7 @@ LIMIT 5;
 
 **Answer:**
 
-**These are the list of the top products with highest sales in the past year (2019)**
+**These are the list of the top products with highest sales in the past year (2019).**
 | Products | sales |
 | ------------------------ | -------- |
 | AAA Batteries (4-pack) | 31012 |
@@ -37,4 +37,4 @@ LIMIT 5;
 | Lightning Charging Cable | 23211 |
 | Wired Headphones | 20553 |
 
-**The AAA Batteries (4-pack) have the highest quantity, while Wired Headphones have the lowest in this top 5 sales**
+**The AAA Batteries (4-pack) have the highest quantity, while Wired Headphones have the lowest in this top 5 sales.**
