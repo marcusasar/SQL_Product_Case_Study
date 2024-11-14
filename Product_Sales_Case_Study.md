@@ -29,7 +29,7 @@ LIMIT 5;
 **Answer:**
 
 **These are the list of the top products with highest sales in the past year (2019).**
-| Products | sales |
+| Products | Quantity |
 | ------------------------ | -------- |
 | AAA Batteries (4-pack) | 31012 |
 | AA Batteries (4-pack) | 27635 |
