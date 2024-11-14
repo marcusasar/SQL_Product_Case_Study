@@ -114,7 +114,7 @@ The data on total quantities sold across different cities reveals the following 
 
 In summary, San Francisco stands out in both total quantity sold figures, while cities like Austin and Portland report significantly lower quantities sold compared to the leaders in the list.
 
-### 4. Which product was really purchased or dominates in each of these cities?
+### 4. Which product made high sales in each of these cities?
 
 ```sql
 WITH product_sales_by_city(city, product, total_quantity) AS (
