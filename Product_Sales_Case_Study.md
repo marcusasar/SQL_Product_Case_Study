@@ -114,7 +114,7 @@ The data on total quantities sold across different cities reveals the following 
 
 In summary, San Francisco stands out in both total quantity sold figures, while cities like Austin and Portland report significantly lower quantities sold compared to the leaders in the list.
 
-### 4. Which product was really purchased by customers in these cities?
+### 4. Which product was really purchased or dominates in each of these cities?
 
 ```sql
 WITH product_sales_by_city(city, product, total_quantity) AS (
@@ -156,3 +156,14 @@ WHERE
 | Portland      | AAA Batteries (4-pack) | 2080           |
 | San Francisco | AAA Batteries (4-pack) | 7408           |
 | Seattle       | AAA Batteries (4-pack) | 2446           |
+
+The sales data for products dominating across various cities shows the following:
+
+- **San Francisco** leads in sales with **7,408** units of AAA batteries sold, far outpacing all other cities.
+- **Los Angeles** follows with **4,967** units, securing the second spot.
+- **New York City** also performs strongly with **4,124** units sold, ranking third.
+- **Boston** reports a solid **3,461** units sold, while **Dallas** is slightly ahead at **2,504** units.
+- **Atlanta** sells **2,359** units, while **Seattle** is close behind with **2,446** units sold.
+- **Austin** and **Portland** have the lowest sales, with **1,668** and **2,080** units sold, respectively.
+
+In summary, **San Francisco** dominates the market for AAA batteries, followed by major cities like **Los Angeles** and **New York City**, while cities such as **Austin** and **Portland** see much lower sales volumes.
