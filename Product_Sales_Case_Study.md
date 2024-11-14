@@ -5,7 +5,7 @@
 ### 1. What are the top 5 products with the highest sales in the past year?
 
 ```sql
-WITH product_highest_sales (products, quantity) AS (
+WITH product_highest_sales (products, sales) AS (
     SELECT
       product,
       SUM(quantity_ordered)
@@ -28,7 +28,7 @@ LIMIT 5;
 
 **Answer:**
 **These are the list of the top products with highest sales in 2019**
-| Products | Quantity |
+| Products | sales |
 | ------------------------ | -------- |
 | AAA Batteries (4-pack) | 31012 |
 | AA Batteries (4-pack) | 27635 |
@@ -36,4 +36,4 @@ LIMIT 5;
 | Lightning Charging Cable | 23211 |
 | Wired Headphones | 20553 |
 
-**AAA Batteries (4-pack) is the product with highest qunatity units whiles Wired Headphones had the least units amongn the top 5**
+**The AAA Batteries (4-pack) have the highest quantity, while Wired Headphones have the lowest in this top 5 sales**
