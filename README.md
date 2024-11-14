@@ -26,13 +26,13 @@ LIMIT 5;
 
 ```
 
-| Products               | Quantity |
-| ---------------------- | -------- |
-| AAA Batteries (4-pack) | 7291     |
-| Excel                  | 4611     |
-| Python                 | 4330     |
-| Tableau                | 3745     |
-| Power BI               | 2609     |
+| Products                 | Quantity |
+| ------------------------ | -------- |
+| AAA Batteries (4-pack)   | 31012    |
+| AA Batteries (4-pack)    | 27635    |
+| USB-C Charging Cable     | 23971    |
+| Lightning Charging Cable | 23211    |
+| Wired Headphones         | 20553    |
 
 "products","quantity"
 "AAA Batteries (4-pack)","31012"
