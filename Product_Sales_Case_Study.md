@@ -73,7 +73,7 @@ LIMIT 5;
 | 20in Monitor | 4126 |
 | ThinkPad Laptop | 4128 |
 
-## Q3. What was the sale volume for each city during last year?
+### 3. What was the sale volume for each city during last year?
 
 ```sql
 WITH sales_by_city(city, total_quantity) AS (
