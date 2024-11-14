@@ -210,9 +210,6 @@ WHERE
 
 The MacBook Pro has seen strong performance across several key U.S. cities, with substantial revenue generated from a diverse range of markets.
 
-/\* Here's a quick overview of its sales impact in major urban centers:
-Even though MacBook Pro Laptop was not the product that had more sales in each of the cities, but it turns to generate more revenue than AAA Batteries (4-pack) which dominates in each city. --
-
 ### 5. How have product sales grown or declined over the last 6 month of 2019?
 
 ```sql
