@@ -157,7 +157,7 @@ WHERE
 | San Francisco | AAA Batteries (4-pack) | 7408           |
 | Seattle       | AAA Batteries (4-pack) | 2446           |
 
-The sales data for products dominating across various cities shows the following:
+The output clearly show that AAA Batteries (4-pack) was the product with high sales volume in each all of the cities:
 
 - **San Francisco** leads in sales with **7,408** units of AAA batteries sold, far outpacing all other cities.
 - **Los Angeles** follows with **4,967** units, securing the second spot.
