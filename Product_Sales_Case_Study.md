@@ -37,7 +37,7 @@ These are the list of the top 5 products with highest sales in the past year (20
 | Lightning Charging Cable | 23211 |
 | Wired Headphones | 20553 |
 
-he AAA Batteries (4-pack) have the highest quantity, while Wired Headphones have the lowest in this top 5 sales.
+The AAA Batteries (4-pack) have the highest quantity, while Wired Headphones have the lowest in this top 5 sales.
 
 ### 2. What are the top 5 products with the least sales in last year?
 
@@ -73,8 +73,7 @@ Top 5 products with least sales in last year.
 | 20in Monitor | 4126 |
 | ThinkPad Laptop | 4128 |
 
-LG Dryer and LG Washing Machine were the products with least quantity ordered,
-20in Monitor and ThinkPad Laptop had some good sales among the list.
+LG Dryer and LG Washing Machine were the products with least quantity ordered by customers:this means they were not really needed, while 20in Monitor and ThinkPad Laptop had some good sales among the list.
 
 ### 3. What was the sales volume for each city during last year?
 
