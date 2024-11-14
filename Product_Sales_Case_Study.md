@@ -76,7 +76,7 @@ LIMIT 5;
 ## Q3. What was the sale volume for each city during last year?
 
 ```sql
-WITH sales_by_city(city, total_sales) AS (
+WITH sales_by_city(city, total_quantitys) AS (
 	SELECT
 		city,
         SUM(quantity_ordered) AS total_sales
@@ -92,19 +92,19 @@ SELECT
 FROM
 	sales_by_city
 ORDER BY
-	total_sales DESC;
+	total_quantity DESC;
 ```
 
-| City          | total_sales |
-| ------------- | ----------- |
-| San Francisco | 50226       |
-| Los Angeles   | 33288       |
-| New York City | 27916       |
-| Boston        | 22524       |
-| Atlanta       | 16602       |
-| Seattle       | 16552       |
-| Portland      | 14051       |
-| Austin        | 11151       |
+| City          | total_quantity |
+| ------------- | -------------- |
+| San Francisco | 50226          |
+| Los Angeles   | 33288          |
+| New York City | 27916          |
+| Boston        | 22524          |
+| Atlanta       | 16602          |
+| Seattle       | 16552          |
+| Portland      | 14051          |
+| Austin        | 11151          |
 
 The sales data for several major cities reveals the following:
 
