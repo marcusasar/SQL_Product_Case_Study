@@ -72,3 +72,48 @@ LIMIT 5;
 | Vareebadd Phone | 2067 |
 | 20in Monitor | 4126 |
 | ThinkPad Laptop | 4128 |
+
+## Q3. What was the sale volume for each city during last year?
+
+```sql
+WITH sales_by_city(city, total_sales) AS (
+	SELECT
+		city,
+        SUM(quantity_ordered) AS total_sales
+	FROM
+		sales
+	WHERE
+		YEAR(order_date) = "2019"
+	GROUP BY
+		city
+)
+SELECT
+	*
+FROM
+	sales_by_city
+ORDER BY
+	total_sales DESC;
+```
+
+| City          | total_sales |
+| ------------- | ----------- |
+| San Francisco | 50226       |
+| Los Angeles   | 33288       |
+| New York City | 27916       |
+| Boston        | 22524       |
+| Atlanta       | 16602       |
+| Seattle       | 16552       |
+| Portland      | 14051       |
+| Austin        | 11151       |
+
+The sales data for several major cities reveals the following:
+
+- **San Francisco** leads with the highest total sales of **$50,226**, significantly outpacing all other cities.
+- **Los Angeles** follows with **$33,288** in sales, nearly 17,000 less than San Francisco.
+- **New York City** comes next with **$27,916** in total sales.
+- **Boston** reports **$22,524** in sales, slightly ahead of the remaining cities.
+- **Dallas** and **Atlanta** have similar figures, with **$16,728** and **$16,602** in sales respectively.
+- **Seattle** is slightly behind Atlanta at **$16,552** in sales.
+- **Portland** follows with **$14,051** in sales, and **Austin** has the lowest total sales at **$11,151**.
+
+In summary, San Francisco stands out as the leader in total sales, while cities like Austin and Portland are at the bottom of the list.
