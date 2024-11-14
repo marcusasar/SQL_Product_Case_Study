@@ -211,7 +211,7 @@ WHERE
 The MacBook Pro has seen strong performance across several key U.S. cities, with substantial revenue generated from a diverse range of markets.
 Cities like San Francisco, Los Angeles and New York drives the highest revenues, growing tech hubs like Austin and Atlanta are showing promise as emerging markets for premium laptops. The overall performance highlights the ongoing demand for high-performance devices that support the fast-paced, demanding work of professionals across a variety of industries.
 
-### 5. How have product sales grown or declined over the last 6 month of 2019?
+### 6. How have product sales grown or declined over the last 6 month of 2019?
 
 ```sql
 WITH sales_monthly_trend AS (
@@ -237,7 +237,7 @@ WHERE
     `month` >= 7;
 ```
 
-### 6. Which days were sales really high?
+### 7. Which days were sales really high?
 
 ```sql
 WITH day_sales AS (
