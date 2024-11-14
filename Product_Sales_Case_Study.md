@@ -145,25 +145,14 @@ WHERE
 
 **Answer:**
 
-| City          | Product                | Total_quantit |
-| ------------- | ---------------------- | ------------- |
-| Atlanta       | AAA Batteries (4-pack) | 2359          |
-| Austin        | AAA Batteries (4-pack) | 1668          |
-| Boston        | AAA Batteries (4-pack) | 3461          |
-| Dallas        | AAA Batteries (4-pack) | 2504          |
-| Los Angeles   | AAA Batteries (4-pack) | 4967          |
-| New York City | AAA Batteries (4-pack) | 4124          |
-| Portland      | AAA Batteries (4-pack) | 2080          |
-| San Francisco | AAA Batteries (4-pack) | 7408          |
-| Seattle       | AAA Batteries (4-pack) | 2446          |
-
-"city","product","total_quantity","rn"
-" Atlanta","AAA Batteries (4-pack)","2359","1"
-" Austin","AAA Batteries (4-pack)","1668","1"
-" Boston","AAA Batteries (4-pack)","3461","1"
-" Dallas","AAA Batteries (4-pack)","2504","1"
-" Los Angeles","AAA Batteries (4-pack)","4967","1"
-" New York City","AAA Batteries (4-pack)","4124","1"
-" Portland","AAA Batteries (4-pack)","2080","1"
-" San Francisco","AAA Batteries (4-pack)","7408","1"
-" Seattle","AAA Batteries (4-pack)","2446","1"
+| City          | Product                | Total_quantity |
+| ------------- | ---------------------- | -------------- |
+| Atlanta       | AAA Batteries (4-pack) | 2359           |
+| Austin        | AAA Batteries (4-pack) | 1668           |
+| Boston        | AAA Batteries (4-pack) | 3461           |
+| Dallas        | AAA Batteries (4-pack) | 2504           |
+| Los Angeles   | AAA Batteries (4-pack) | 4967           |
+| New York City | AAA Batteries (4-pack) | 4124           |
+| Portland      | AAA Batteries (4-pack) | 2080           |
+| San Francisco | AAA Batteries (4-pack) | 7408           |
+| Seattle       | AAA Batteries (4-pack) | 2446           |
