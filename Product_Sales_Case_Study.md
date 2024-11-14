@@ -28,7 +28,7 @@ LIMIT 5;
 
 **Answer:**
 
-**These are the list of the top 5 products with highest sales in the past year (2019).**
+These are the list of the top 5 products with highest sales in the past year (2019).
 | Products | Total_Quantity |
 | ------------------------ | -------- |
 | AAA Batteries (4-pack) | 31012 |
@@ -37,7 +37,7 @@ LIMIT 5;
 | Lightning Charging Cable | 23211 |
 | Wired Headphones | 20553 |
 
-**The AAA Batteries (4-pack) have the highest quantity, while Wired Headphones have the lowest in this top 5 sales.**
+he AAA Batteries (4-pack) have the highest quantity, while Wired Headphones have the lowest in this top 5 sales.
 
 ### 2. What are the top 5 products with the least sales in last year?
 
@@ -64,7 +64,7 @@ LIMIT 5;
 
 **Answer:**
 
-**Top 5 products with least sales in last year**
+Top 5 products with least sales in last year.
 | Products | Total_Quantity |
 | ------------------ | -------- |
 | LG Dryer | 646 |
@@ -73,7 +73,10 @@ LIMIT 5;
 | 20in Monitor | 4126 |
 | ThinkPad Laptop | 4128 |
 
-### 3. What was the sale volume for each city during last year?
+LG Dryer and LG Washing Machine were the products with least quantity ordered,
+20in Monitor and ThinkPad Laptop had some good sales among the list.
+
+### 3. What was the sales volume for each city during last year?
 
 ```sql
 WITH sales_by_city(city, total_quantity) AS (
@@ -109,7 +112,7 @@ ORDER BY
 
 The data on total quantities sold across different cities reveals the following trends:
 
-- **San Francisco** leads with the highest total quantity sold, reaching **50,226** units, marking it as the top performer.
+- **San Francisco** leads with the highest total quantity sold, reaching **50,226** units, marking it as the top city.
 - **Los Angeles** follows with **33,288** units, still significantly behind San Francisco but leading the second tier of cities.
 - **New York City** comes in third, with **27,916** units sold, maintaining a strong position among the top cities.
 - **Boston** shows a solid performance with **22,524** units sold, higher than the cities trailing behind it.
@@ -117,4 +120,4 @@ The data on total quantities sold across different cities reveals the following 
 - **Seattle** is also within this range, at **16,552** units, showing similar sales performance to Dallas and Atlanta.
 - **Portland** has sold **14,051** units, and **Austin** has the lowest sales quantity at **11,151** units.
 
-In summary, San Francisco stands out in both total quantity sold and sales figures, while cities like Austin and Portland report significantly lower quantities sold compared to the leaders in the list.
+In summary, San Francisco stands out in both total quantity sold figures, while cities like Austin and Portland report significantly lower quantities sold compared to the leaders in the list.
