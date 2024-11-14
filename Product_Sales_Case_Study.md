@@ -196,4 +196,4 @@ WHERE
     rn <= 1;
 ```
 
-Even though MacBook Pro Laptop was not the product that had more sales in each of the citie, but it turns to generate more revenue than each product.
+Even though MacBook Pro Laptop was not the product that had more sales in each of the cities, but it turns to generate more revenue than AAA Batteries (4-pack) which dominates in each city.
