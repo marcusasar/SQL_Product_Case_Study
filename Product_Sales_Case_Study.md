@@ -167,3 +167,33 @@ The output clearly shows that AAA Batteries (4-pack) was the product with high s
 - **Austin** and **Portland** have the lowest sales, with **1,668** and **2,080** units sold, respectively.
 
 In summary, **San Francisco** dominates the market for AAA batteries, followed by major cities like **Los Angeles** and **New York City**, while cities such as **Austin** and **Portland** see much lower sales volumes.
+
+### 5. Which product generated the most revenue in each of the cities?
+
+```sql
+WITH product_revenue_by_city AS (
+    SELECT
+        city,
+        product,
+        ROUND(SUM(quantity_ordered * price_each)) AS total_revenue
+    FROM
+        sales
+    GROUP BY
+        city,
+        product
+), ranking AS (
+SELECT
+    *,
+    RANK() OVER(PARTITION BY city ORDER BY total_revenue DESC) AS rn
+FROM
+     product_revenue_by_city
+)
+SELECT
+    *
+FROM
+    ranking
+WHERE
+    rn <= 1;
+```
+
+Even though MacBook Pro Laptop was not the product that had more sales in each of the citie, but it turns to generate more revenue than each product.
