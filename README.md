@@ -1,4 +1,4 @@
-# 🛒 Product Analytics Mini Case Study
+# 🛒 Product Sales Analytics
 
 ## 📌 Solution
 
