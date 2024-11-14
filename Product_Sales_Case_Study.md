@@ -43,15 +43,22 @@ The AAA Batteries (4-pack) have the highest quantity, while Wired Headphones hav
 
 ```sql
 WITH product_least_sales (products, quantity) AS (
-    SELECT product,
+    SELECT
+        product,
         SUM(quantity_ordered)
-    FROM sales
-    WHERE YEAR(order_date) = "2019"
-    GROUP BY product
+    FROM
+        sales
+    WHERE
+        YEAR(order_date) = "2019"
+    GROUP BY
+        product
 )
-SELECT *
-FROM product_least_sales
-ORDER BY quantity ASC
+SELECT
+    *
+FROM
+    product_least_sales
+ORDER BY
+    quantity ASC
 LIMIT 5;
 ```
 
