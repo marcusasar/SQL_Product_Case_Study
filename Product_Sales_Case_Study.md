@@ -54,11 +54,11 @@ WITH product_least_sales (products, quantity) AS (
         product
 )
 SELECT
-	*
+    *
 FROM
-	product_least_sales
+    product_highest_sales
 ORDER BY
-	quantity ASC
+    quantity ASC
 LIMIT 5;
 ```
 
